@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './Clientes.scss'
 
 function AssignValues() {
   localStorage.setItem("nome", document.form1.nome.value);
@@ -26,7 +27,7 @@ export default function Clientes() {
         </div>
       </form>
       <div>
-        <input type="button" value="Cadastrar" onClick={AssignValues} />
+        <input type="button" id="cadCli" value="Cadastrar" onClick={AssignValues} />
       </div>
       <div>
         <Link to="/"><button>Voltar</button></Link>
